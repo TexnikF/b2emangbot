@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>BeamNG RP Mini App</title>
+
+    <!-- Подключение официального SDK Telegram Web App -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+    <style>
+        /* Отключаем системное выделение текста и скролл-баунс на мобилках */
+        body {
+            margin: 0;
+            padding: 0;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: pan-y;
+            background-color: #09090b;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Корневой контейнер для React -->
+    <div id="root"></div>
+
+    <!-- Подключение точки входа React -->
+    <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
